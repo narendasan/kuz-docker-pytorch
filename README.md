@@ -1,5 +1,5 @@
-# kuz-docker-pytorch-cpu
-CPU Pytorch Dockerfile for Kuz
+# kuz-docker-pytorch
+Pytorch Dockerfile for Kuz
 
 ## How to use this docker box
  
