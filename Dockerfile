@@ -14,7 +14,7 @@ RUN python3.6 -m pip install pip --upgrade
 RUN python3.6 -m pip install wheel
 RUN python3.6 -m pip install http://download.pytorch.org/whl/cu75/torch-0.1.12.post2-cp36-cp36m-linux_x86_64.whl
 RUN python3.6 -m pip install torchvision
-RUN alias python="python3.6"
-RUN alias pip="python3.6 -m pip install"
+RUN echo 'alias python="python3.6"' >> ~/.bashrc
+RUN echo 'alias python="python3.6 -m pip"' >> ~/.bashrc
 
 CMD /bin/bash
