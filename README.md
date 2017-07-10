@@ -10,5 +10,5 @@ docker build -t pytorch-cpu .
 
 Run with Docker 
 ```
-docker run --rm -ti --ipc=host --name test pytorch-cpu
+docker run --rm -ti --ipc=host -v [PATH TO DATA]/data:/data -v [PATH TO CODE]/src --name test pytorch-cpu
 ```
