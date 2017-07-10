@@ -5,10 +5,10 @@ CPU Pytorch Dockerfile for Kuz
  
 Build this image 
 ```
-docker build -t pytorch-cpu .
+docker build -t pytorch .
 ```
 
 Run with Docker 
 ```
-docker run --rm -ti --ipc=host -v [PATH TO DATA]/data:/data -v [PATH TO CODE]/src --name test pytorch-cpu
+nvidia-docker run --rm -ti --ipc=host -v [PATH TO DATA]/data:/data -v [PATH TO CODE]/src --name test pytorch
 ```
