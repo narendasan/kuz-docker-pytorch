@@ -10,5 +10,5 @@ docker build -t pytorch .
 
 Run with Docker 
 ```
-nvidia-docker run --rm -ti --ipc=host -v [PATH TO DATA]/data:/data -v [PATH TO CODE]/src --name test pytorch
+nvidia-docker run --rm -ti --ipc=host -v [PATH TO DATA]/data:/data -v [PATH TO CODE]:/src --name test pytorch
 ```
